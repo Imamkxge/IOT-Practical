@@ -1,8 +1,8 @@
-import datetime
-import time
-import RPi.GPIO as GPIO
-import telepot
-from telepot.loop import MessageLoop
+#import datetime
+#import time
+#import RPi.GPIO as GPIO
+#import telepot
+#from telepot.loop import MessageLoop
 
 green = 6
 yellow = 13
@@ -86,7 +86,7 @@ print(telegram_bot.getMe())
 MessageLoop(telegram_bot, action).run_as_thread()
 print("Up and Runnning....")
 
-while 1:
+while 0:
 	time.sleep(10)
 			
 			
