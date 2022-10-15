@@ -1,11 +1,10 @@
-import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
-import Adafruit_ADS1x15
+#import matplotlib.pyplot as plt
+#from matplotlib.animation import FuncAnimation
+#import Adafruit_ADS1x15
 
-adc = Adafruit_ADS1x15.ADS1115()
 
-GAIN = 1
-val = []
+ani = FuncAnimation(fig, update, interval=500)
+plt.show()
 
 fig, ax = plt.subplots()
 ax.set_ylimit(-5000, 5000)
@@ -26,5 +25,9 @@ def update(cnt):
 	if(cnt>50):
 		val.pop(0)
 
-ani = FuncAnimation(fig, update, interval=500)
-plt.show()
+
+
+adc = Adafruit_ADS1x15.ADS1115()
+
+GAIN = 1
+val = []
