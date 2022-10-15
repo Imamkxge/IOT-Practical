@@ -24,4 +24,4 @@ while(True):
 Display = tm1637.TM1637(23, 24, tm1637.BRIGHT_TYPICAL)
 
 Display.clear()
-Display.SetBrightness(1)
+Display.SetBrightnes(1)
